@@ -1,1 +1,8 @@
-{}
+{
+  "items": [
+    {
+      "itemName": "Test",
+      "itemDescription": "Test desc"
+    }
+  ]
+}
