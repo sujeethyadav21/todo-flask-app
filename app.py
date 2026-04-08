@@ -1,9 +1,12 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template, request
 
 app = Flask(__name__)
+
 @app.route('/')
 def home():
-    return "Welocome to my To-Do App!"
+    # This tells Flask to look in the /templates folder for index.html
+    return render_template('index.html')
+
 @app.route('/api')
 def api():
     return jsonify({"message": "Hello World"})
