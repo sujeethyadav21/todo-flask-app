@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from flask import Flask, jsonify, render_template, request
 
 app = Flask(__name__)
@@ -11,7 +10,6 @@ def home():
 @app.route('/api')
 def api():
     return jsonify({"message": "Hello World"})
-=======
 from flask import Flask, render_template, request, jsonify
 from pymongo import MongoClient
 
@@ -40,7 +38,6 @@ def submit():
     })
     
     return "Success! Item added to the database."
->>>>>>> master_2
 
 if __name__ == "__main__":
     app.run(debug=True)
